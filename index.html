@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>Market Sentry</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<input id="product_id" value="MLB707404766" type="text" maxlength="100" placeholder="Código do Produto" required autofocus/><br>
+		<input id="target_value" value="50" type="number" placeholder="Valor Alvo" required /><br>
+		<input id="email" value="rafaelzulin@gmail.com" type="email" placeholder="E-mail" maxlength="100" required /><br>
+		<button type="button" onclick="getProductInfo()">Validar</button>
+		<button type="button" onclick="save()">Salvar</button>
+		<div id="show">
+			<p id="id"><p>
+			<a target="_blank" id="permalink"></a>
+			<p id="site_id"></p>
+			<p id="title"></p>
+			<img id="picture" alt="" />
+		</div>		
+		<p id="demo"></p>
+	</body>
+</html>
